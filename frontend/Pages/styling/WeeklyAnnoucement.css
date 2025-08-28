@@ -1,0 +1,38 @@
+.weekly-announcement-container {
+  background-color: var(--background-white);
+  padding: var(--space-6);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.weekly-announcement-title {
+  color: var(--primary-blue);
+  margin-bottom: var(--space-4);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: var(--space-2);
+}
+
+.announcement-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.announcement-item {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+}
+
+.announcement-number {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: var(--space-3);
+  flex-shrink: 0;
+}

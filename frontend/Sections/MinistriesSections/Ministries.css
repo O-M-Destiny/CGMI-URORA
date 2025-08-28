@@ -1,0 +1,174 @@
+.seasonal-ministries {
+  padding: var(--space-20) 0;
+  background-color: var(--background-light);
+}
+
+.seasonal-ministries .events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.seasonal-ministries .event-date {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: var(--space-4);
+  text-align: center;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seasonal-ministries .event-date .month {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.seasonal-ministries .event-date .day {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.seasonal-ministries .event-content {
+  padding: var(--space-6);
+  flex: 1;
+}
+
+.seasonal-ministries .event-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: var(--space-2);
+  font-size: 1.25rem;
+}
+
+.seasonal-ministries .event-content p {
+  font-size: 0.9rem;
+  margin-bottom: var(--space-4);
+}
+
+/* Ministries CTA Section */
+.get-involved-cta {
+  padding: var(--space-20) 0;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  color: var(--text-white);
+  text-align: center;
+}
+
+.get-involved-cta h2 {
+  color: var(--text-white);
+  margin-bottom: var(--space-6);
+}
+
+.get-involved-cta .lead {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.get-involved-cta .cta-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.get-involved-cta .btn-secondary {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+/* Main Ministries Section */
+.main-ministries {
+  padding: var(--space-20) 0;
+}
+
+/* Page Header Section */
+.page-header .lead {
+  margin-bottom: 30px;
+}
+
+/* Specialized Ministries Section */
+.specialized-ministries {
+  padding: var(--space-20) 0;
+  background-color: var(--background-light);
+}
+
+.specialized-ministries .section-subtitle {
+  margin-bottom: 15px;
+}
+
+.specialized-ministries .ministries-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+.specialized-ministries .ministry-card {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  overflow: hidden;
+}
+
+.specialized-ministries .ministry-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.specialized-ministries .ministry-image {
+  flex: 1;
+  min-height: 250px;
+}
+
+.specialized-ministries .ministry-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.specialized-ministries .ministry-content {
+  flex: 1;
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.specialized-ministries .ministry-content .btn-container {
+  margin-top: var(--space-4);
+}
+
+/* Support Ministries Section */
+.support-ministries {
+  padding: var(--space-20) 0;
+}
+
+.support-ministries .support-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.support-ministries .support-card {
+  background-color: var(--background-white);
+  padding: var(--space-6);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.support-ministries .support-card h3 {
+  color: var(--primary-blue);
+}
+
+.support-ministries .support-card p {
+  color: var(--text-medium);
+}
+
+.support-ministries .support-card .learn-more {
+  display: inline-block;
+  margin-top: var(--space-3);
+}

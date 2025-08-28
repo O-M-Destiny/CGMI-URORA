@@ -1,0 +1,25 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+SQLAlchemy==2.0.41
+psycopg2-binary==2.9.9
+
+
+# Auth & security
+python-jose==3.5.0
+passlib==1.7.4
+bcrypt==3.2.2
+
+# Email support
+fastapi-mail==1.5.0
+aiosmtplib==3.0.2
+email_validator==2.2.0
+
+# Environment & settings
+python-dotenv==1.1.1
+pydantic==2.11.7
+pydantic-settings==2.10.1
+
+# Extra utilities
+phonenumbers==9.0.10
+Jinja2==3.1.6
+PyYAML==6.0.2

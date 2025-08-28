@@ -1,0 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# VS Code / IDE stuff
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+*.env
+
+# Logs
+*.log
+
+# Byte-compiled / cache
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db

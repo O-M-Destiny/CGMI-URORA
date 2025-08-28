@@ -1,0 +1,486 @@
+.page-header {
+  padding: var(--space-16) 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark, #1e40af) 100%);
+  color: white;
+}
+
+.page-header h1 {
+  color: white;
+  margin-bottom: var(--space-4);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.page-header .lead {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Countdown Section */
+.countdown-section {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: var(--space-16) 0;
+}
+
+.countdown-section h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-4);
+  font-size: 2rem;
+}
+
+.countdown-section .lead {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-8);
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  text-align: center;
+  min-width: 80px;
+}
+
+.countdown-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.countdown-label {
+  display: block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.countdown-section .btn-cta {
+  margin-top: var(--space-8);
+  background-color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: white;
+  padding: var(--space-4) var(--space-8);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.countdown-section .btn-cta:hover {
+  background-color: var(--accent-gold-dark, #d97706);
+  transform: translateY(-2px);
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: var(--space-20) 0;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: var(--space-4);
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-medium);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.benefit-card {
+  background-color: var(--background-white);
+  padding: var(--space-8);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.benefit-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: var(--space-2);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* Visit Form Section */
+.visit-form-section {
+  padding: var(--space-20) 0;
+  background-color: var(--background-light);
+}
+
+.visit-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: var(--space-10);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.visit-form {
+  margin-top: var(--space-8);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.form-row.two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 2px rgba(var(--primary-blue-rgb), 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.radio-label input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: var(--space-8);
+}
+
+.btn {
+  padding: var(--space-3) var(--space-6);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: white;
+  border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-dark, #1e40af);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.btn.large {
+  padding: var(--space-4) var(--space-8);
+  font-size: 1.125rem;
+}
+
+/* Expect Section */
+.expect-section {
+  padding: var(--space-20) 0;
+}
+
+.steps-container {
+  max-width: 800px;
+  margin: var(--space-12) auto 0;
+}
+
+.step-item {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.step-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+.step-item h3 {
+  color: var(--primary-blue);
+  margin-bottom: var(--space-2);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.step-item p {
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* Final CTA Section */
+.final-cta {
+  padding: var(--space-20) 0;
+  background-color: var(--accent-gold);
+  color: white;
+  text-align: center;
+}
+
+.final-cta h2 {
+  color: white;
+  margin-bottom: var(--space-4);
+  font-size: 2.25rem;
+}
+
+.final-cta .lead {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-6);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.final-cta .btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.final-cta .btn-secondary {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.final-cta .btn-secondary:hover {
+  background-color: white;
+  color: var(--accent-gold);
+}
+
+/* Container utility class */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .form-row.two-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .countdown-timer {
+    gap: var(--space-8);
+  }
+  
+  .countdown-item {
+    min-width: 100px;
+  }
+  
+  .countdown-number {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .page-header h1 {
+    font-size: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    padding: var(--space-12) 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .countdown-section {
+    padding: var(--space-12) 0;
+  }
+  
+  .countdown-number {
+    font-size: 2.5rem;
+  }
+  
+  .benefits-section,
+  .visit-form-section,
+  .expect-section,
+  .final-cta {
+    padding: var(--space-16) 0;
+  }
+  
+  .visit-form-container {
+    padding: var(--space-6);
+  }
+  
+  .benefit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .benefit-icon {
+    align-self: center;
+  }
+  
+  .step-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .step-number {
+    align-self: center;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
