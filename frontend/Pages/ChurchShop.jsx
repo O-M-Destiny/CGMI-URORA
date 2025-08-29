@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Footer from '../Sections/HomepageSections/Footer';
 import Navbar from '../Sections/HomepageSections/Navbar'
-import "./styling/ChurchShop.css";
+import "./styling/churchShop.css";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
