@@ -4,6 +4,8 @@ import Navbar from '../Sections/HomepageSections/Navbar';
 import Footer from '../Sections/HomepageSections/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 // Helper function to extract readable error messages from Pydantic validation errors
 const extractErrorMessage = (error) => {
   if (typeof error === 'string') {
@@ -89,7 +91,7 @@ const Contact = () => {
     setStatus({ type: '', message: '' });
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/public/contact", formData, {
+      const response = await axios.post(`${API_BASE_URL}/public/contact`, formData, {
         headers: { "Content-Type": "application/json" }
       });
 

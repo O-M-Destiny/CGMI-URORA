@@ -5,6 +5,8 @@ import Navbar from "../Sections/HomepageSections/Navbar";
 import WeeklyAnnouncement from "./WeeklyAnnouncement";
 import "./Resources.css";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 const StatusMessage = ({ submitStatus }) => {
   if (!submitStatus.message) return null;
   return (
@@ -198,7 +200,7 @@ const ResourcesPage = () => {
   // Tab configurations
   const tabConfig = {
     announcements: {
-      endpoint: "http://127.0.0.1:8000/public/submit_annoucement",
+      endpoint: `${API_BASE_URL}/public/submit_annoucement`,
       fields: [
         { name: "name", label: "Your Name", type: "text", placeholder: "Enter Full Name", required: true },
         {
@@ -212,7 +214,7 @@ const ResourcesPage = () => {
       ]
     },
     prayer: {
-      endpoint: "http://127.0.0.1:8000/public/prayer_request",
+      endpoint: `${API_BASE_URL}/public/prayer_request`,
       fields: [
         { name: "name", label: "Your Name", type: "text", placeholder:"Enter Full Name", required: true },
         {
@@ -226,7 +228,7 @@ const ResourcesPage = () => {
       ]
     },
     counselling: {
-      endpoint: "http://127.0.0.1:8000/public/counselling",
+      endpoint: `${API_BASE_URL}/public/counselling`,
       fields: [
         { name: "name", label: "Your Name", placeholder:"Enter Full Name", type: "text", required: true },
         {
@@ -247,7 +249,7 @@ const ResourcesPage = () => {
       ]
     },
     dob: {
-      endpoint: "http://127.0.0.1:8000/public/date_of_birth",
+      endpoint: `${API_BASE_URL}/public/date_of_birth`,
       fields: [
         { name: "name", label: "Full Name", type: "text", placeholder:"Enter Full Name", required: true },
         {

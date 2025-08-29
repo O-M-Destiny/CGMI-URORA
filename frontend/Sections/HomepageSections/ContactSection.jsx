@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 // Helper function to extract readable error messages from Pydantic validation errors
 const extractErrorMessage = (error) => {
@@ -83,8 +84,11 @@ const ContactSection = () => {
     setLoading(true);
     setStatus({ type: '', message: '' });
 
+    // Debug logging
+    const fullUrl = `${API_BASE_URL}/public/get_connected`;
+    
     try {
-      const response = await axios.post("http://127.0.0.1:8000/public/get_connected", {
+      const response = await axios.post(fullUrl, {
         name,
         email,
         phone,
@@ -115,6 +119,9 @@ const ContactSection = () => {
       setTimeout(() => setStatus({ type: '', message: '' }), 4000);
     } catch (error) {
       console.error("Submission error:", error);
+      console.error("Error response:", error.response);
+      console.error("Error status:", error.response?.status);
+      console.error("Error data:", error.response?.data);
       
       // Use the helper function to extract readable error message
       const errorMessage = extractErrorMessage(error);
@@ -186,6 +193,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="contact-form" style={{marginBottom:"20px"}}>
             <h3>Get Connected</h3>
+            
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
