@@ -16,7 +16,8 @@ app = FastAPI(
 
 origins = [
     "http://localhost:5173",  #  frontend URL
-    "https://cgmiurora.vercel.app"
+    "https://cgmiurora.vercel.app",
+    "https://cgmi-urora1.onrender.com"
 ]
 
 app.add_middleware(
